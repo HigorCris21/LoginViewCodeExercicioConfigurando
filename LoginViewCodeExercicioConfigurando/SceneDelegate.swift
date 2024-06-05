@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Define o UINavigationController como o controlador de exibição raiz da janela.
         window.rootViewController = navVC
 
-        // Torna a janela a principal e visível.
+        // Torna a janela  principal e visível.
         window.makeKeyAndVisible()
 
         // Atribui a janela criada à propriedade window do objeto de cena atual.
