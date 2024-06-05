@@ -25,6 +25,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .red
+        
+        self.view.addSubview(self.loginLabel)
+        self.setupConstraints()
+    }
+    
+    private func setupConstraints(){
+        
+        NSLayoutConstraint.activate([
+            self.loginLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.loginLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        ])
     }
     
     // Esta função é chamada pouco antes da view aparecer na tela
