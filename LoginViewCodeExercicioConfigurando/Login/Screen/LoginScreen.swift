@@ -78,7 +78,7 @@ class LoginScreen: UIView {
         self.addSubview(self.loginLabel)
         self.addSubview(self.logoAppImageView)
         self.addSubview(self.emailTextField)
-//        self.addSubview(self.passwordTextField)
+        self.addSubview(self.passwordTextField)
     }
     
     
@@ -95,7 +95,13 @@ class LoginScreen: UIView {
             self.emailTextField.topAnchor.constraint(equalTo: self.logoAppImageView.bottomAnchor, constant: 20),
             self.emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             self.emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            self.emailTextField.heightAnchor.constraint(equalToConstant: 45)
+            self.emailTextField.heightAnchor.constraint(equalToConstant: 45),
+            
+            self.passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 15),
+            self.passwordTextField.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
+            self.passwordTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
+            self.passwordTextField.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor)
+            
             
         ])
     }
