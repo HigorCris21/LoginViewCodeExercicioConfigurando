@@ -22,9 +22,7 @@ class LoginScreen: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "logo")
-        image.tintColor = .green
         image.contentMode = .scaleAspectFit
-        image.backgroundColor = .blue
         return image
         
     }()
@@ -32,6 +30,7 @@ class LoginScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
         self.addSubview(self.loginLabel)
         self.addSubview(self.logoAppImageView)
         self.setupConstraints()

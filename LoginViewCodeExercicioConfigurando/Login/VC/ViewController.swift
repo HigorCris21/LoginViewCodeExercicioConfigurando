@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     // Esta função é chamada uma vez que a view foi carregada na memória/
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+ 
     }
     
     
