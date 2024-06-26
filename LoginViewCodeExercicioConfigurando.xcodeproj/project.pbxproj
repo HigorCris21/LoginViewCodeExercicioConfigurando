@@ -15,6 +15,7 @@
 		EBBE75282C0FB213002B147D /* LoginViewCodeExercicioConfigurandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75272C0FB213002B147D /* LoginViewCodeExercicioConfigurandoTests.swift */; };
 		EBBE75322C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75312C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITests.swift */; };
 		EBBE75342C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75332C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITestsLaunchTests.swift */; };
+		EBE741042C2B7F8C00A32FD4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE741032C2B7F8C00A32FD4 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EBBE752D2C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginViewCodeExercicioConfigurandoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE75312C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCodeExercicioConfigurandoUITests.swift; sourceTree = "<group>"; };
 		EBBE75332C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCodeExercicioConfigurandoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBE741032C2B7F8C00A32FD4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,9 @@
 		EBBE750F2C0FB212002B147D /* LoginViewCodeExercicioConfigurando */ = {
 			isa = PBXGroup;
 			children = (
+				EBE741002C2B7F3000A32FD4 /* Login */,
 				EBBE75102C0FB212002B147D /* AppDelegate.swift */,
 				EBBE75122C0FB212002B147D /* SceneDelegate.swift */,
-				EBBE75142C0FB212002B147D /* ViewController.swift */,
 				EBBE75192C0FB213002B147D /* Assets.xcassets */,
 				EBBE751B2C0FB213002B147D /* LaunchScreen.storyboard */,
 				EBBE751E2C0FB213002B147D /* Info.plist */,
@@ -122,6 +124,31 @@
 				EBBE75332C0FB213002B147D /* LoginViewCodeExercicioConfigurandoUITestsLaunchTests.swift */,
 			);
 			path = LoginViewCodeExercicioConfigurandoUITests;
+			sourceTree = "<group>";
+		};
+		EBE741002C2B7F3000A32FD4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EBE741022C2B7F4C00A32FD4 /* Screen */,
+				EBE741012C2B7F3600A32FD4 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EBE741012C2B7F3600A32FD4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EBBE75142C0FB212002B147D /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EBE741022C2B7F4C00A32FD4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EBE741032C2B7F8C00A32FD4 /* LoginScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBE75152C0FB212002B147D /* ViewController.swift in Sources */,
+				EBE741042C2B7F8C00A32FD4 /* LoginScreen.swift in Sources */,
 				EBBE75112C0FB212002B147D /* AppDelegate.swift in Sources */,
 				EBBE75132C0FB212002B147D /* SceneDelegate.swift in Sources */,
 			);
