@@ -20,8 +20,11 @@ class ViewController: UIViewController {
     // Esta função é chamada uma vez que a view foi carregada na memória/
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginScreen?.configTextFieldDelegate(delegate: self)
  
     }
+    
+
     
     
  
@@ -30,6 +33,15 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // Oculta a barra de navegação, se houver uma presente
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+}
+
+extension ViewController: UITextFieldDelegate {
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 
 }
