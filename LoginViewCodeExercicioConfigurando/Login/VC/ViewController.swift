@@ -24,10 +24,6 @@ class ViewController: UIViewController {
  
     }
     
-
-    
-    
- 
     
     // Esta função é chamada pouco antes da view aparecer na tela
     override func viewWillAppear(_ animated: Bool) {
@@ -37,11 +33,22 @@ class ViewController: UIViewController {
 
 }
 
+
 extension ViewController: UITextFieldDelegate {
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("textFieldDidBeginEditing")
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        print("textFieldDidEndEditing")
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textFieldShouldReturn")
         textField.resignFirstResponder()
+        
+        return true
     }
 
 }
