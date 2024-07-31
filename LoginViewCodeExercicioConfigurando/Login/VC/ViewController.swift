@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     var loginScreen: LoginScreen?
 
     override func loadView() {
@@ -20,6 +19,8 @@ class ViewController: UIViewController {
     // Esta função é chamada uma vez que a view foi carregada na memória/
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginScreen?.delegate(delegate: self)
+        
         self.loginScreen?.configTextFieldDelegate(delegate: self)
  
     }
@@ -30,6 +31,19 @@ class ViewController: UIViewController {
         // Oculta a barra de navegação, se houver uma presente
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+
+}
+
+
+extension ViewController: LoginScreenProtocol {
+    func actionLoginButton() {
+        print("Funcionou Login Button")
+    }
+    
+    func actionRegisterButton() {
+        print("Funcionou RegisterButton")
+    }
+    
 
 }
 
