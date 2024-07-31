@@ -77,6 +77,8 @@ class LoginScreen: UIView {
         button.setTitle("Não tem conta? Cadastre-se", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(.white, for: .normal)
+        
+        button.addTarget(self, action: #selector(self.tappedRegisterButto), for: .touchUpInside)
      
         return button
         
@@ -117,8 +119,14 @@ class LoginScreen: UIView {
         self.passwordTextField.delegate = delegate
     }
     
+    
+    //Método para o botão de Login
     @objc private func tappedLoginButton() {
         print("Botão de Login!")
+    }
+    
+    @objc private func tappedRegisterButto() {
+        print("Botão Registrar")
     }
     
     
