@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB4297D32C5D3CEE004384FC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4297D22C5D3CEE004384FC /* RegisterVC.swift */; };
+		EB4297D52C5D4778004384FC /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4297D42C5D4778004384FC /* RegisterScreen.swift */; };
 		EBBE75112C0FB212002B147D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75102C0FB212002B147D /* AppDelegate.swift */; };
 		EBBE75132C0FB212002B147D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75122C0FB212002B147D /* SceneDelegate.swift */; };
 		EBBE75152C0FB212002B147D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE75142C0FB212002B147D /* LoginVC.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		EB4297D22C5D3CEE004384FC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		EB4297D42C5D4778004384FC /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		EBBE750D2C0FB212002B147D /* LoginViewCodeExercicioConfigurando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCodeExercicioConfigurando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE75102C0FB212002B147D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBE75122C0FB212002B147D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		EB4297CE2C5D3C3A004384FC /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				EB4297D42C5D4778004384FC /* RegisterScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				EBBE75152C0FB212002B147D /* LoginVC.swift in Sources */,
 				EBE741042C2B7F8C00A32FD4 /* LoginScreen.swift in Sources */,
 				EBBE75112C0FB212002B147D /* AppDelegate.swift in Sources */,
+				EB4297D52C5D4778004384FC /* RegisterScreen.swift in Sources */,
 				EBBE75132C0FB212002B147D /* SceneDelegate.swift in Sources */,
 				EB4297D32C5D3CEE004384FC /* RegisterVC.swift in Sources */,
 			);
