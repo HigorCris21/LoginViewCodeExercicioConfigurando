@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
 
         // Cria uma instância do ViewController, que é a tela inicial do aplicativo.
-        let vc: ViewController = ViewController()
+        let vc: LoginVC = LoginVC()
 
         // Cria um UINavigationController, que é um controlador de navegação que gerencia uma pilha de ViewControllers.
         // O ViewController criado anteriormente é definido como o rootViewController deste UINavigationController.

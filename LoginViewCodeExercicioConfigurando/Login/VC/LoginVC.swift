@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
     
     var loginScreen: LoginScreen?
 
@@ -35,20 +35,22 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: LoginScreenProtocol {
+extension LoginVC: LoginScreenProtocol {
     func actionLoginButton() {
         print("Funcionou Login Button")
     }
     
     func actionRegisterButton() {
         print("Funcionou RegisterButton")
+        let vc: RegisterVC = RegisterVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 
 }
 
 
-extension ViewController: UITextFieldDelegate {
+extension LoginVC: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("textFieldDidBeginEditing")
